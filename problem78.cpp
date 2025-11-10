@@ -12,10 +12,11 @@ void subsets(vector<int> &x, int n, vector<int> &v, int i)
         {
             cout << var << " ";
         }
+        cout<<endl;
         return;
     }
 
-    v.push_back(v[i]);
+    v.push_back(x[i]);
     subsets(x, n, v, i + 1);
 
     v.pop_back();
@@ -29,5 +30,4 @@ int main()
     vector<int> g = {1, 2, 3, 4, 5};
     subsets(g, 5, v, 0);
 
-    cout << "hi";
 }
