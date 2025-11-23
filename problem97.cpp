@@ -1,0 +1,87 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    int n;
+    cin>>n;
+    int arr[n][n];
+    arr[-1][-1]=1;
+for(int i=0;i<n;i++){
+arr[i][0]=arr[i-1][i-1];
+cout<<arr[i][0]<<" ";
+for(int j=1;j<=i;j++){
+
+
+arr[i][j]=arr[i][j-1]+arr[i-1][j-1];
+cout<<arr[i][j]<<" ";
+
+
+
+
+
+
+
+
+
+
+
+
+}
+cout<<endl;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
