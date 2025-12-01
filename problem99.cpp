@@ -7,8 +7,8 @@ using namespace std;
 
 
 int main(){
-int arr[6]={1,4,5,7,3,2};
-int n=6;
+int arr[7]={5, 4, 3, 2, 1, 7, 6};
+int n=7;
 //bubble sort
 /*
  for(int i=0;i<n;i++){
@@ -35,21 +35,24 @@ for(int i=0;i<n;i++){
             int temp=arr[i];
             arr[i]=arr[j];
             arr[j]=temp;
-        }
-    }
-}
-*/
+            }
+            }
+            }
+            */
+           
+           // insertion sort
 
-/*insertion sort
-
+           
+/*
 for(int i=1;i<n;i++){
     
 int current=i;
 int prev=i-1;
-while(prev>=0 && arr[i]<arr[prev]){
+int idx=i;
+while(prev>=0 && arr[idx]<arr[prev]){
     
-swap(arr[i],arr[prev]);
-i--;
+swap(arr[idx],arr[prev]);
+idx--;
 prev--;
 }
 
@@ -67,6 +70,7 @@ prev--;
 
 
 }
+
 
 */
 
